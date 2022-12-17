@@ -1,0 +1,541 @@
+%Кришталь Максим ПОИТ 5
+a = 2
+
+a =
+
+     2
+
+%Присваивание переменной a значение 2
+b = 7
+
+b =
+
+     7
+
+%Присваивание переменной b значение 7
+a + b
+
+ans =
+
+     9
+
+%Сложение
+a/b
+
+ans =
+
+    0.2857
+
+%Деление
+b^2
+
+ans =
+
+    49
+
+%Возведение в степень
+sqrt(b)
+
+ans =
+
+    2.6458
+
+%Корень квадратный
+log(b)
+
+ans =
+
+    1.9459
+
+%ln(7)
+log10(100)
+
+ans =
+
+     2
+
+%log10(100)
+abs(-b)
+
+ans =
+
+     7
+
+%Модуль
+sin(pi/3)
+
+ans =
+
+    0.8660
+
+floor(3.8)
+
+ans =
+
+     3
+
+%Отбрасывание дробной части
+x = [1, 2, 3]
+
+x =
+
+     1     2     3
+
+%Создание вектора
+x2 = [1; 2; 3]
+
+x2 =
+
+     1
+     2
+     3
+
+%Доступ к вектору
+A = [1, 2, 3; 4, 5, 6; 7, 8, 9]
+
+%Создание матрицы
+A =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+%Матрица
+zeros(12, 5)
+
+ans =
+
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+
+%Матрица из нулей 12x5
+eye(10, 3)
+
+ans =
+
+     1     0     0
+     0     1     0
+     0     0     1
+     0     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+
+%Создание еденичной матрицы 10x3
+7:15
+
+ans =
+
+  Columns 1 through 7
+
+     7     8     9    10    11    12    13
+
+  Columns 8 through 9
+
+    14    15
+
+%Вектор строка 7, 8, ..., 14, 15
+linspace(1, 2, 20)
+
+ans =
+
+  Columns 1 through 4
+
+    1.0000    1.0526    1.1053    1.1579
+
+  Columns 5 through 8
+
+    1.2105    1.2632    1.3158    1.3684
+
+  Columns 9 through 12
+
+    1.4211    1.4737    1.5263    1.5789
+
+  Columns 13 through 16
+
+    1.6316    1.6842    1.7368    1.7895
+
+  Columns 17 through 20
+
+    1.8421    1.8947    1.9474    2.0000
+
+%Чё-то сложное
+x(2)
+
+ans =
+
+     2
+
+%Второй элемент вектора
+A(2, 4)
+{Index in position 2 exceeds array bounds (must
+not exceed 3).
+} 
+A(2, 3)
+
+ans =
+
+     6
+
+%Элемент матрицы A2,3 
+A2[11, 12, 13; 14, 15, 16; 17, 18, 19]
+ A2[11, 12, 13; 14, 15, 16; 17, 18, 19]
+   ↑
+{Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise,
+check for mismatched delimiters.
+} 
+A2 = [11, 12, 13; 14, 15, 16; 17, 18, 19]
+
+A2 =
+
+    11    12    13
+    14    15    16
+    17    18    19
+
+%Создание второй матрицы
+A*A2
+
+ans =
+
+    90    96   102
+   216   231   246
+   342   366   390
+
+%Перемножение матриц
+x*A
+
+ans =
+
+    30    36    42
+
+%Умножение вектора на матрицу
+A*x
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication. Check that the number of columns in the first matrix
+matches the number of rows in the second matrix. To perform elementwise multiplication, use '.*'.
+
+<a href="matlab:helpview('matlab','error_innerdim')" style="font-weight:bold">Related documentation</a>
+} 
+inv(A)
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.202823e-18.] 
+[] 
+
+ans =
+
+   1.0e+16 *
+
+    0.3153   -0.6305    0.3153
+   -0.6305    1.2610   -0.6305
+    0.3153   -0.6305    0.3153
+
+%Обратная матрица
+det(A)
+
+ans =
+
+  -9.5162e-16
+
+%Определитель матрцы
+size(A)
+
+ans =
+
+     3     3
+
+%Размер матрицы
+a == 10
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+%Проверить, если a равно 10
+a == 2
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+%Проверить, если a равно 2
+a ~= 2
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+%Проверить, если a не равно 2
+a > 1 && a ~= 10
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+%Проверить, если a больше 1 и не равно 10
+a > 1 || a ~= 2
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+%Проверить, если a больше 1 или не равно 2
+a
+
+a =
+
+     2
+
+%Значение a
+if a > 0
+disp('a bigger than 0');
+elseif a == 0
+disp('a = 0');
+else
+disp('a < 0');
+end
+a bigger than 0
+%Условные выражения
+for k = 1:5
+disp(k);
+end
+     1
+
+     2
+
+     3
+
+     4
+
+     5
+
+%Цикл for 
+function output = sum(x, y)
+ function output = sum(x, y)
+ ↑
+{Error: Function definition not supported in this context. Create functions in code file.
+} 
+f = @(x) sin(x.^2)./(5*x);%Создание функции
+f(pi/2)
+
+ans =
+
+    0.0795
+
+%Передаем функции значение pi/2
+a = 0.1
+
+a =
+
+    0.1000
+
+%Присваиваем a = 0.1
+b = 0.5
+
+b =
+
+    0.5000
+
+%Присваиваем b = 0.5
+integral((sin(x)/pow(x, 3)) 0.1, 0.5)
+ integral((sin(x)/pow(x, 3)) 0.1, 0.5)
+                             ↑
+{Error: Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+integral((sin(x)/pow(x, 3))0.1, 0.5)
+ integral((sin(x)/pow(x, 3))0.1, 0.5)
+                            ↑
+{Error: Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+w
+{Unrecognized function or variable 'w'.
+} 
+fun = @x ((sin(x))./(x.^3))
+ fun = @x ((sin(x))./(x.^3))
+          ↑
+{Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise,
+check for mismatched delimiters.
+} 
+fun  = @x sin(2)./(x^3);
+ fun  = @x sin(2)./(x^3);
+           ↑
+{Error: Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+fun  = @x sin(x)./(x^3);
+ fun  = @x sin(x)./(x^3);
+           ↑
+{Error: Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+fun  = @x sin(x)./(x.^3);
+ fun  = @x sin(x)./(x.^3);
+           ↑
+{Error: Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+fun  = @x sin(x)./(x^3);
+ fun  = @x sin(x)./(x^3);
+           ↑
+{Error: Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+integral(2)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('integral', 'D:\maksim\MatLab\toolbox\matlab\funfun\integral.m', 80)" style="font-weight:bold">integral</a> (<a href="matlab: opentoline('D:\maksim\MatLab\toolbox\matlab\funfun\integral.m',80,0)">line 80</a>)
+Not enough input arguments.
+} 
+help
+--- help for <strong>integral</strong> ---
+
+ <strong>integral</strong>  Numerically evaluate integral.
+    Q = <strong>integral</strong>(FUN,A,B) approximates the integral of function FUN from A
+    to B using global adaptive quadrature and default error tolerances.
+ 
+    FUN must be a function handle. A and B can be -Inf or Inf. If both are
+    finite, they can be complex. If at least one is complex, <strong>integral</strong>
+    approximates the path integral from A to B over a straight line path.
+ 
+    For scalar-valued problems the function Y = FUN(X) must accept a vector
+    argument X and return a vector result Y, the integrand function
+    evaluated at each element of X. For array-valued problems (see the
+    'ArrayValued' option below) FUN must accept a scalar and return an
+    array of values.
+ 
+    Q = <strong>integral</strong>(FUN,A,B,PARAM1,VAL1,PARAM2,VAL2,...) performs the
+    integration with specified values of optional parameters. The available
+    parameters are
+ 
+    'AbsTol', absolute error tolerance
+    'RelTol', relative error tolerance
+ 
+        <strong>integral</strong> attempts to satisfy |Q - I| <= max(AbsTol,RelTol*|Q|),
+        where I denotes the exact value of the integral. Usually RelTol
+        determines the accuracy of the integration. However, if |Q| is
+        sufficiently small, AbsTol determines the accuracy of the
+        integration, instead. The default value of AbsTol is 1.e-10, and
+        the default value of RelTol is 1.e-6. Single precision integrations
+        may require larger tolerances.
+ 
+    'ArrayValued', FUN is an array-valued function when the input is scalar
+ 
+        When 'ArrayValued' is true, FUN is only called with scalar X, and
+        if FUN returns an array, <strong>integral</strong> computes a corresponding array of
+        outputs Q. The default value is false.
+ 
+    'Waypoints', vector of integration waypoints
+ 
+        If FUN(X) has discontinuities in the interval of integration, the
+        locations should be supplied as a 'Waypoints' vector. Waypoints
+        should not be used for singularities in FUN(X). Instead, split the
+        interval and add the results from separate integrations with
+        singularities at the endpoints. If A, B, or any entry of the
+        waypoints vector is complex, the integration is performed over a
+        sequence of straight line paths in the complex plane, from A to the
+        first waypoint, from the first waypoint to the second, and so
+        forth, and finally from the last waypoint to B.
+ 
+    Examples:
+        % Integrate f(x) = exp(-x^2)*log(x)^2 from 0 to infinity:
+        f = @(x) exp(-x.^2).*log(x).^2
+        Q = integral(f,0,Inf)
+ 
+        % To use a parameter in the integrand:
+        f = @(x,c) 1./(x.^3-2*x-c)
+        Q = integral(@(x)f(x,5),0,2)
+ 
+        % Specify tolerances:
+        Q = integral(@(x)log(x),0,1,'AbsTol',1e-6,'RelTol',1e-3)
+ 
+        % Integrate f(z) = 1/(2z-1) in the complex plane over the
+        % triangular path from 0 to 1+1i to 1-1i to 0:
+        Q = integral(@(z)1./(2*z-1),0,0,'Waypoints',[1+1i,1-1i])
+ 
+        % Integrate the vector-valued function sin((1:5)*x) from 0 to 1:
+        Q = integral(@(x)sin((1:5)*x),0,1,'ArrayValued',true)
+ 
+    Class support for inputs A, B, and the output of FUN:
+       float: double, single
+ 
+    See also <a href="matlab:help integral2">integral2</a>, <a href="matlab:help integral3">integral3</a>, <a href="matlab:help function_handle">function_handle</a>
+
+    <a href="matlab:doc integral">Documentation for integral</a>
+
+
+
+f = @(x,c) 1./(x.^3-2*x-c)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x,c)1./(x.^3-2*x-c)
+
+%Создание функции
+Q = integral(@(x)f(x,5),0,2)
+
+Q =
+
+   -0.4605
+
+%Вычисление интеграла функции f
+doc integral
+fun = @(x) sin(x)./x.^3;
+q = integral(fun,0.1,0.5)
+
+q =
+
+    7.9337
+
+%Вычисление интеграла функции fun
+fun = @(x) sin(x)./x^3;
+q = integral(fun,0.1,0.5)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', 'D:\maksim\MatLab\toolbox\matlab\ops\mpower.m', 51)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('D:\maksim\MatLab\toolbox\matlab\ops\mpower.m',51,0)">line 51</a>)
+Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is a
+scalar. To perform elementwise matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('@(x)sin(x)./x^3')" style="font-weight:bold">@(x)sin(x)./x^3</a>
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('integralCalc/iterateScalarValued', 'D:\maksim\MatLab\toolbox\matlab\funfun\private\integralCalc.m', 314)" style="font-weight:bold">integralCalc/iterateScalarValued</a> (<a href="matlab: opentoline('D:\maksim\MatLab\toolbox\matlab\funfun\private\integralCalc.m',314,0)">line 314</a>)
+                fx = FUN(t);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('integralCalc/vadapt', 'D:\maksim\MatLab\toolbox\matlab\funfun\private\integralCalc.m', 132)" style="font-weight:bold">integralCalc/vadapt</a> (<a href="matlab: opentoline('D:\maksim\MatLab\toolbox\matlab\funfun\private\integralCalc.m',132,0)">line 132</a>)
+            [q,errbnd] = iterateScalarValued(u,tinterval,pathlen);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('integralCalc', 'D:\maksim\MatLab\toolbox\matlab\funfun\private\integralCalc.m', 75)" style="font-weight:bold">integralCalc</a> (<a href="matlab: opentoline('D:\maksim\MatLab\toolbox\matlab\funfun\private\integralCalc.m',75,0)">line 75</a>)
+        [q,errbnd] = vadapt(@AtoBInvTransform,interval);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('integral', 'D:\maksim\MatLab\toolbox\matlab\funfun\integral.m', 88)" style="font-weight:bold">integral</a> (<a href="matlab: opentoline('D:\maksim\MatLab\toolbox\matlab\funfun\integral.m',88,0)">line 88</a>)
+Q = integralCalc(fun,a,b,opstruct);
+} 
+matlab.internal.language.introspective.errorDocCallback('mpower', 'D:\maksim\MatLab\toolbox\matlab\ops\mpower.m', 51)
+fun = @(x) sin(x)./x.^3;
+q = integral(fun,0.1,0.5)
+
+q =
+
+    7.9337
+
+%Вычисление интеграла функции fun
